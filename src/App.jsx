@@ -36,7 +36,7 @@ class App extends Component {
   }
 
   addContact = data => {
-    const normalizedName = data.name;
+    const normalizedName = data.name.toLowerCase();
     const uniqId = Date.now().toString();
 
     const newContact = {
